@@ -1250,6 +1250,197 @@ a {
           align-items: center;
 }
 
+.advantages-section {
+  background-color: #fff5f6;
+  padding: 0;
+  padding-bottom: 97px;
+}
+@media screen and (min-width: 768px) {
+  .advantages-section {
+    padding-bottom: 140px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantages {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -36px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .advantages {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantages__list {
+    width: calc((100% - 216px) / 3);
+    margin: 36px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .advantages__list {
+    width: calc((100% - 90px) / 3);
+    margin: 15px;
+  }
+}
+
+.advantages__list::before {
+  display: inline-block;
+  height: 50px;
+  content: " ";
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 767px) {
+  .advantages__list::before {
+    margin-bottom: 16px;
+  }
+}
+
+.advantages-first::before {
+  width: 33px;
+  background-image: url("../images/mobile/icon1-1x.png");
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .advantages-first::before {
+    background-image: url("../images/mobile/icon1-2x.png");
+  }
+}
+.advantages-second::before {
+  width: 50px;
+  background-image: url("../images/mobile/icon2-1x.png");
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .advantages-second::before {
+    background-image: url("../images/mobile/icon2-2x.png");
+  }
+}
+.advantages-third::before {
+  width: 44px;
+  background-image: url("../images/mobile/icon3-1x.png");
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .advantages-third::before {
+    background-image: url("../images/mobile/icon3-2x.png");
+  }
+}
+@media screen and (max-width: 767px) {
+  .advantages__list:not(:last-child) {
+    margin-bottom: 38px;
+  }
+}
+
+.advantages__name {
+  color: #d41443;
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 41px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 768px) {
+  .advantages__name {
+    font-size: 48px;
+    line-height: 55px;
+    margin-top: 36px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .advantages__name {
+    margin-top: 40px;
+    font-size: 58px;
+    line-height: 66px;
+  }
+}
+
+.advantages__description {
+  margin-top: 11px;
+  color: #000000;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1.67;
+  width: 230px;
+  height: 36px;
+}
+@media screen and (min-width: 768px) {
+  .advantages__description {
+    margin-top: 13px;
+    font-size: 14px;
+    line-height: 24px;
+    width: 180px;
+    height: 71px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .advantages__description {
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    width: 330px;
+    height: 52px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.gallery__section {
+  margin-left: 0;
+  margin-right: 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #fff5f6), color-stop(50%, #ffffff));
+  background-image: linear-gradient(to bottom, #fff5f6 50%, #ffffff 50%);
+}
+@media screen and (min-width: 768px) {
+  .gallery__section {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #fff5f6), color-stop(40%, #ffffff));
+    background-image: linear-gradient(to bottom, #fff5f6 40%, #ffffff 40%);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .gallery__section {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(40%, #fff5f6), color-stop(40%, #ffffff));
+    background-image: linear-gradient(to bottom, #fff5f6 40%, #ffffff 40%);
+  }
+}
+
+.gallery__images {
+  margin: 0 auto;
+  -webkit-transition: -webkit-transform 250ms linear;
+  transition: -webkit-transform 250ms linear;
+  transition: transform 250ms linear;
+  transition: transform 250ms linear, -webkit-transform 250ms linear;
+}
+.gallery__images:hover, .gallery__images:focus {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
 footer {
   background-color: #fff5f6;
 }

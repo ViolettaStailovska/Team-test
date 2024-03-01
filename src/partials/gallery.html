@@ -1,0 +1,21 @@
+<section class="section gallery__section">
+    <div class="container gallery__container">
+      <h1 class="visually-hidden">Галлерея</h1>
+      <picture>
+        <source
+          srcset="./images/desktop/gallery-1x.jpeg 1x, ./images/desktop/gallery-2x.jpeg 2x"
+          media="(min-width: 1280px)"
+        />
+  
+        <source
+          srcset="./images/tablet/gallery-1x.jpeg 1x, ./images/tablet/gallery-2x.jpeg 2x"
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="./images/mobile/gallery-1x.jpeg 1x, ./images/mobile/gallery-2x.jpeg 2x"
+          media="(min-width: 320px)"
+        />
+        <img class="gallery__images" src="./images/mobile/gallery-1x.jpeg" alt="Микст картинок" />
+      </picture>
+    </div>
+  </section>

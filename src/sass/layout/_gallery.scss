@@ -1,0 +1,33 @@
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+  }
+  
+  .gallery__section {
+    margin-left: 0;
+    margin-right: 0;
+    background-image: linear-gradient(to bottom, #fff5f6 50%, #ffffff 50%);
+    @media screen and (min-width: 768px) {
+      background-image: linear-gradient(to bottom, #fff5f6 40%, #ffffff 40%);
+    }
+  
+    @media screen and (min-width: 1280px) {
+      background-image: linear-gradient(to bottom, #fff5f6 40%, #ffffff 40%);
+    }
+  }
+  
+  .gallery__images {
+    margin: 0 auto;
+    transition: transform 250ms linear;
+  
+    &:hover,
+    &:focus {
+      transform: scale(1.03);
+    }
+  }
