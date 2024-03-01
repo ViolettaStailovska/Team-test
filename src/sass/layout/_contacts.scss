@@ -1,0 +1,361 @@
+.contacts {
+  padding: 30px 0;
+  background: linear-gradient(to bottom, #fff 8.5%, $third-accent 8.5%, $third-accent 100%);
+
+  @media screen and (min-width: 768px) {
+    background: linear-gradient(to bottom, #fff 15%, $third-accent 15%, $third-accent 100%);
+  }
+  @media screen and (min-width: 1280px) {
+    background: url(../images/desktop/contact-bg-1x.png) no-repeat 0 30%,
+      linear-gradient(to bottom, #fff 17%, $third-accent 17%, $third-accent 100%);
+    background-size: contain;
+  }
+  @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2) {
+    background-image: url(../images/desktop/contact-bg-2x.png) no-repeat 0 30%,
+      linear-gradient(to bottom, #fff 17%, $third-accent 17%, $third-accent 100%);
+    background-size: contain;
+  }
+}
+  
+  
+  .contacts__list {
+    margin-bottom: 54px;
+    padding: 0 30px;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      padding: 0;
+      margin-bottom: 81px;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 86px;
+    }
+  }
+  
+  .contacts__item {
+    padding: 45px 20px;
+    background-color: #fff;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    margin-bottom: 20px;
+  
+    transition: transform 250ms linear;
+  
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+  
+      &:hover,
+      &:focus {
+        transform: scale(1.05);
+      }
+  
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+  }
+  .contacts__category {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    text-transform: uppercase;
+  
+    background: #f0d1a5;
+    border-radius: 4px;
+    padding: 0 25px;
+    display: inline-block;
+    margin-bottom: 25px;
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+    }
+    &-foodtruck {
+      background-color: #c2e297;
+    }
+  }
+  
+  .contacts__city {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    margin-bottom: 10px;
+    line-height: 1.86;
+    color: $primary-color;
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 16px;
+    }
+  }
+  .contacts__description {
+    display: inline-block;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e1e1e1;
+    margin-bottom: 25px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    color: $text-color;
+    line-height: 1.5;
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+      line-height: 1.66;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 16px;
+      line-height: 1.83;
+    }
+  }
+  
+  .contacts__work-schedule {
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.86;
+    border-bottom: 1px solid #e1e1e1;
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 16px;
+    }
+  }
+  .contacts__weekdays {
+    margin-bottom: 10px;
+  }
+  .contacts__work-day {
+    color: $primary-color;
+  }
+  .contacts__work-time {
+    color: $secondary-accent;
+  }
+  .contacts__tel,
+  .contacts__mail {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+  
+    color: #907e82;
+    @media screen and (min-width: 768px) {
+      font-size: 14px;
+      line-height: 1.83;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 16px;
+    }
+  }
+  .contacts__buttons {
+    display: flex;
+    flex-direction: column;
+  
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.31;
+    align-items: center;
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+  .contacts__location {
+    display: flex;
+    justify-content: baseline;
+    padding: 12px 20px;
+    background: #d41342;
+    border-radius: 22px;
+    color: #fff;
+    margin-bottom: 10px;
+    border: none;
+    cursor: pointer;
+    &:hover,
+    &:focus {
+      background: #c7133e;
+    }
+    @media screen and (min-width: 768px) {
+      margin-bottom: 0;
+      margin-right: 15px;
+      margin-left: auto;
+    }
+  }
+  
+  .icon-loc {
+    fill: #fff;
+    margin-left: 10px;
+  }
+  .contacts__franchise {
+    display: flex;
+    justify-content: baseline;
+    padding: 12px 32px;
+    background: #fff;
+    border-radius: 22px;
+    color: $main-accent;
+    border: none;
+    cursor: pointer;
+  
+    @media screen and (min-width: 768px) {
+      margin-right: auto;
+    }
+    &:hover,
+    &:focus {
+      background: #ecebeb;
+    }
+  }
+  .icon-fr {
+    fill: $main-accent;
+    margin-left: 10px;
+  }
+  .locations__backdrop,
+  .franchise__backdrop {
+    position: fixed;
+  
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  
+    background: rgba(00, 00, 00, 0.1);
+    opacity: 1;
+    transition: opacity 1000ms var(--cubic);
+  }
+  
+  .locations__modal {
+    overflow-y: auto;
+    width: 100hw;
+    height: 100%;
+    max-height: 830px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background: #fff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 24px;
+    padding: 20px;
+    @media screen and (min-width: 768px) {
+      height: auto;
+    }
+  }
+  .franchise__modal {
+    top: 50%;
+    left: 50%;
+    background: #fff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 24px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    height: auto;
+    width: 300px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    @media screen and (min-width: 768px) {
+      min-width: 750px;
+    }
+  }
+  .locations__close,
+  .franchise__close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    width: 30px;
+    height: 30px;
+    border: 1px solid #d41443;
+    border-radius: 50%;
+    background-color: #ffffff;
+  
+    cursor: pointer;
+    color: #d41443;
+  }
+  .locations__list {
+    @media screen and (min-width: 768px) {
+      width: 700px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-right: -15px;
+      margin-bottom: -15px;
+    }
+  }
+  
+  .locations__item {
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+    @media screen and (min-width: 768px) {
+      margin-right: 15px;
+      margin-bottom: 15px;
+    }
+  }
+  .locations__text,
+  .franchise__text {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.83;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 5px;
+    color: #d41443;
+  }
+  
+  .is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+  .franchise__input {
+    border: 1px solid $main-accent;
+    border-radius: 24px;
+    padding: 11px 35px;
+    outline: none;
+    margin-bottom: 10px;
+    &::placeholder {
+      color: $text-color;
+      text-align: center;
+    }
+    width: 207px;
+  }
+  .franchise__btn {
+    border: 1px solid $main-accent;
+    border-radius: 24px;
+    padding: 11px 12px;
+    outline: none;
+    background-color: $main-accent;
+    color: #fff;
+    cursor: pointer;
+  }
+  .franchise__formfield {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .map {
+    @media screen and (max-width: 767px) {
+      width: 250px;
+    }
+  }
+
+ 
