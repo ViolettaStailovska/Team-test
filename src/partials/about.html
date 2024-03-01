@@ -1,0 +1,47 @@
+<section class="about" id="about">
+    <div class="container">
+      <p lang="en" class="about__text">tradition and love</p>
+      <h2 lang="en" class="about__title">how it’s made?</h2>
+  
+      <div class="about__general-wrapper">
+        <!-- Общий контейнер для контейнера картинки и для контейнера с текстом -->
+        <div class="about__image-wrapper">
+          <picture>
+            <source
+              srcset="./images/desktop/about1-1x.png 1x, ./images/desktop/about1-2x.png 2x"
+              media="(min-width:1280px)"
+            />
+            <source
+              srcset="./images/tablet/about1-1x.png 1x, ./images/tablet/about1-2x.png 2x"
+              media="(min-width:768px)"
+            />
+            <source
+              srcset="./images/mobile/about1-1x.png 1x, ./images/mobile/about1-2x.png 2x"
+              media="(min-width:320px)"
+            />
+  
+            <img srcset="./images/mobile/about1-1x.png 1x, ./images/mobile/about1-1x.png 2x" src="./images/mobile/about1-1x.png" alt="свежее молоко и красивая коровка" />
+          </picture>
+        </div>
+  
+        <div class="about__text-wrapper">
+          <!-- Текстовый кнтейнер -->
+          <p class="about__second-text">
+            Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
+            lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
+          </p>
+  
+          <p class="about__third-text">
+            Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci
+            in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna
+            maximus. Cras massa nibh, tincidunt. Aliquam erat volutpat. Aenean accumsan.
+          </p>
+          <button lang="en" class="about__button" type="button">
+            Read more<svg class="about__icon" width="10" height="10">
+              <use href="./images/sprite.svg#icon-arrow"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
