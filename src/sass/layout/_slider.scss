@@ -1,0 +1,37 @@
+.slick-dots li:not(:last-child) {
+    margin-right: 18px;
+    
+  }
+  .slick-dots li {
+    height: 12px;
+    width: 12px;
+    margin: 0;
+    border-radius: 50%;
+    border: transparent;
+    background-color: #d9d9d9;
+    background-image: url('../images/desktop/slide-passive.svg');
+    
+  }
+  
+  .slick-dots li.slick-active {
+    background-image: url('../images/desktop/slide-active.svg');
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: contain;
+    border-radius: 0;
+    transition: background-color 0ms linear;
+  }
+  
+  .slick-dots li button {
+    height: 12px;
+    width: 12px;
+    color: transparent;
+    border-radius: 50%;
+    border: transparent;
+    background-color: #d9d9d9;
+    transition: background-color 250ms linear;
+  
+    &::before {
+      display: none;
+       }
+  }
