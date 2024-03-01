@@ -1586,6 +1586,44 @@ a {
   }
 }
 
+.slick-dots li:not(:last-child) {
+  margin-right: 18px;
+}
+
+.slick-dots li {
+  height: 12px;
+  width: 12px;
+  margin: 0;
+  border-radius: 50%;
+  border: transparent;
+  background-color: #d9d9d9;
+  background-image: url("../images/desktop/slide-passive.svg");
+}
+
+.slick-dots li.slick-active {
+  background-image: url("../images/desktop/slide-active.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-size: contain;
+  border-radius: 0;
+  -webkit-transition: background-color 0ms linear;
+  transition: background-color 0ms linear;
+}
+
+.slick-dots li button {
+  height: 12px;
+  width: 12px;
+  color: transparent;
+  border-radius: 50%;
+  border: transparent;
+  background-color: #d9d9d9;
+  -webkit-transition: background-color 250ms linear;
+  transition: background-color 250ms linear;
+}
+.slick-dots li button::before {
+  display: none;
+}
+
 .contacts {
   padding: 30px 0;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(8.5%, #fff), color-stop(8.5%, #fff5f6), to(#fff5f6));
