@@ -1,0 +1,134 @@
+.advantages-section{
+    background-color: $third-accent;
+    padding:0;
+    padding-bottom:97px;
+    @media screen and (min-width: 768px){
+    padding-bottom:140px;
+    }
+  }
+  .advantages{
+    @media screen and (min-width: 768px){
+        display:flex;
+        flex-wrap: wrap;
+        margin: -36px;
+      
+    }
+    @media screen and (min-width: 1280px){
+        display:flex;
+        flex-wrap: wrap;
+        margin: -15px;
+      
+    }
+  }
+  .advantages__list{
+    @media screen and (min-width: 768px){
+        width: calc((100% - 3*72px)/3);
+        margin:36px;
+    }
+    @media screen and (min-width: 1280px){
+      width: calc((100% - 3*30px)/3);
+      margin:15px;
+      
+  }
+  }
+  .advantages__list::before {
+    display:inline-block;
+    height: 50px;
+    content: " ";
+    background-size: contain;
+    background-repeat: no-repeat;
+    @media screen and (max-width: 767px){
+      margin-bottom: 16px;
+    }
+   
+  
+  }
+  .advantages-first::before {
+      width: 33px;
+      background-image: url('../images/mobile/icon1-1x.png');
+    }
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .advantages-first::before {
+      background-image: url('../images/mobile/icon1-2x.png');
+    }
+  }
+    .advantages-second::before {
+      width: 50px;
+      background-image: url('../images/mobile/icon2-1x.png');
+    }
+    
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .advantages-second::before {
+      background-image: url('../images/mobile/icon2-2x.png');
+    }
+  }
+    .advantages-third::before {
+      width:44px;
+      background-image: url('../images/mobile/icon3-1x.png');
+    }
+  
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      .advantages-third::before  {
+      background-image: url('../images/mobile/icon3-2x.png');
+    }
+  }
+  .advantages__list:not(:last-child) {
+      @media screen and (max-width: 767px){
+      margin-bottom: 38px;
+      }
+  }
+  
+  .advantages__name{   
+        color: $main-accent; 
+        font-family: Titan One;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 36px;
+        line-height: 41px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        @media screen and (min-width: 768px){
+        font-size: 48px;
+        line-height: 55px;
+        margin-top:36px;
+        }
+        @media screen and (min-width: 1280px){
+        margin-top:40px;
+        font-size: 58px;
+        line-height: 66px;
+        }
+  }
+  .advantages__description{
+       margin-top: 11px;
+        color: $primary-color;
+        font-family: DM Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 1.67;
+        width: 230px;
+        height: 36px;
+        @media screen and (min-width: 768px){
+         margin-top: 13px;
+          font-size: 14px;
+          line-height: 24px;
+          width: 180px;
+          height: 71px;
+          }
+          @media screen and (min-width: 1280px){
+            font-size: 16px;
+            line-height: 28px;
+            letter-spacing: 0.02em;
+            width: 330px;
+            height: 52px;
+          }
+  }
